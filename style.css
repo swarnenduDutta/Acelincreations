@@ -1,0 +1,127 @@
+html { min-height: 100%; min-width: 100%; position: relative; }
+body { color: #666; font-family: "Work Sans", sans-serif; font-size: 18px; height: 100%; line-height: 24px; overflow-x: hidden; }
+h2, h3, h4 { font-weight: 700; }
+
+.transition-one { background: #39c; height: 100%; left: 0; position: absolute; overflow: hidden; top: 0; transform: translateX(-100%); width: 100%; z-index: 100; }
+.transition-two { background: #939; height: 100%; left: 0; position: absolute; overflow: hidden; top: 0; transform: translateX(-100%); width: 100%; z-index: 100; }
+
+.content { max-width: 992px; }
+	.home, .single { background: repeating-linear-gradient( 180deg, #efefef, #efefef 12px, #fff 12px, #fff 24px); }
+	.home, .single { /*background: repeating-linear-gradient( 90deg, #efefef, #efefef 1px, #fff 2px, #fff 33.33%); background-position: 15px 0;*/ padding-bottom: 36px; padding-top: 48px; }
+	.logo { height: 132px; margin: 24px 0 48px -65px; width: auto; }
+	.main-nav { font-weight: 700; list-style: none; margin: 6px 0 144px -40px; }
+		.main-nav a { color: #999; }
+			.main-nav a:hover { color: #999; text-decoration: none; }
+			.main-nav a.active { color: #939; }
+
+	.testimonial { background: #39c; border-radius: 2px; border-top-left-radius: 0; color: #fff; padding: 12px; margin: 12px 0 36px; }
+		.testimonial span { display: block; }
+			span.source:before { content: "—"; display: block; }
+		.testimonial:before { border: 12px solid; border-color: #39c #39c transparent transparent; content: ' '; border-radius: 2px; margin-top: 12px; position: absolute; height: 0; width: 0; left: -8px; top: 0; }
+
+	.post a { color: #666; }
+		.post a:hover { color: #666; text-decoration: none; }
+	.post img { border-radius: 2px; margin-bottom: 24px; max-width: 100%; min-width: 100%; }
+	.home h2 { font-size: 1em; line-height: 24px; margin: 6px 0 30px; }
+	.post ul, .post ol { margin-bottom: 24px; margin-left: -40px; list-style: circle; }
+	/*.home .post img { background: #efefef; min-height: 180px; min-width: 300px; }*/
+
+	.single .post img { margin-bottom: 30px; }
+	.single h2 { font-size: 2em; line-height: 48px; margin: 0 0 42px; }
+	.single h3 { font-size: 1.6em; margin: 41px 0 24px; }
+	.single h4 { font-size: 1.2em; margin: 47px 0 26px; }
+	.single p, .single address { margin-bottom: 24px; }
+		.single p:last-child { margin-bottom: 18px; }
+	.single i { color: #39c; margin-right: 12px; }
+
+	.single-tags { color: #39c; list-style: none; margin: 0 0 0 -40px; }
+		.single-tags:before { content: "_"; }
+
+	.team img { border: 4px solid #ccc; border-radius: 50%; max-height: 144px; max-width: 144px; min-width: auto; }
+	.team span { display: block; }
+		.team .name { font-weight: bold; }
+			.team .profile { color: #999; }
+	.team ul { margin: 0 0 48px -40px; }
+		.team li { display: inline-block; }
+			i.fa-twitter { color: #1da1f2; }
+			i.fa-facebook-official { color: #3b5998; }
+			i.fa-linkedin { color: #0077b5; }
+
+	.show-more { background: #fff; border: 1px solid #999; border-radius: 2px; color: #999; font-family: "Work Sans", sans-serif; font-size: .8em; height: 36px; margin: 0 0 24px; text-align: center; width: 100%; }
+		.show-more:hover { background: #39c; border: 1px solid #39c; color: #fff; cursor: pointer; }
+		.show-more:focus { outline: none; }
+		.show-more:active { outline: none; background: #1a80b3; border: 1px solid #1a80b3; }
+
+	form { margin-bottom: 24px; }
+		.form-group { margin-bottom: 0; }
+		label { font-weight: 700; margin-bottom: 6px; }
+		input.form-control { border-radius: 2px; height: 36px; margin-bottom: 30px; }
+			input.btn-primary { background: #39c; border: 1px solid #39c; border-radius: 2px; font-family: "Work Sans", sans-serif; height: 36px; }
+				input.btn-primary:hover { background: #1a80b3; border: 1px solid #1a80b3; cursor: pointer; }
+		textarea.form-control { border-radius: 2px; margin-bottom: 12px; min-height: 84px; }
+			.form-control:focus { border: 1px solid #39c; }
+
+	.contact i { margin-right: 12px; }
+
+.footer { background: #39c; color: #fff; padding: 42px 0; }
+	/*.footer { background: repeating-linear-gradient( 180deg, #efefef, #efefef 12px, #fff 12px, #fff 24px); color: #666; }*/
+	.footer .content { }
+		.footer ul { list-style: none; margin: 0 0 0; }
+		.footer i { margin-right: 12px; }
+		.footer a { color: #fff; }
+			.footer a:hover { color: #fff; }
+
+/* media queries */
+@media only screen and (max-device-width: 767px) {
+	.home, .single { background: none; padding-top: 24px; }
+	.logo { height: 84px; margin: 0 0 36px; }
+	.main-nav { column-count: 2; margin: 18px 0 42px -28px; }
+	.single-tags { margin: 48px 0 30px -40px; }
+		.single-tags li { display: inline-block; }
+			.single-tags li:not(:last-child):after { content: ","; }
+	.footer ul:first-child { margin-bottom: 24px; }
+}
+
+/* animations */
+
+/*.preload * { animation: none !important; }*/
+
+@keyframes fadeInUp {
+	0% { opacity: 0; transform: translate3d(0, 12px, 0); }
+	100% { opacity: 1; transform: none; }
+}
+
+@keyframes increaseWidth {
+	0% { transform: translateX(-100%); }
+	100% { transform: translate(0); }
+}
+
+@keyframes decreaseWidth {
+	0% { transform: translateX(0); }
+	100% { transform: translate(100%); }
+}
+
+@keyframes increaseWidthReverse {
+	0% { transform: translateX(0); }
+	100% { transform: translate(-100%); }
+}
+
+@keyframes decreaseWidthReverse {
+	0% { transform: translateX(100%); }
+	100% { transform: translate(0); }
+}
+
+.main .fadeIn { animation: fadeInUp ease-in 1; animation-fill-mode: forwards; animation-duration: 300ms; opacity: 0; }
+.main .fadeIn.one { animation-delay: 450ms; }
+.main .fadeIn.two { animation-delay: 600ms; }
+.main .fadeIn.three { animation-delay: 750ms; }
+.main .fadeIn.four { animation-delay: 900ms; }
+.main .fadeIn.five { animation-delay: 1050ms; }
+.main .fadeIn.six { animation-delay: 1200ms; }
+
+/*.transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms, decreaseWidth 300ms ease-in forwards 2100ms; }
+.transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms, decreaseWidth 300ms ease-in forwards 1950ms; }*/
+
+.is-exiting .fadeIn { animation: none; }
+.is-exiting .transition-one { animation: decreaseWidthReverse 300ms ease-in forwards 0, increaseWidthReverse 300ms ease-in forwards 600ms; }
+.is-exiting .transition-two { animation: decreaseWidthReverse 300ms ease-in forwards 150ms, increaseWidthReverse 300ms ease-in forwards 450ms; }
