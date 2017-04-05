@@ -6,8 +6,8 @@ h2, h3, h4 { font-weight: 700; }
 .transition-two { background: #939; height: 100%; left: 0; position: absolute; overflow: hidden; top: 0; transform: translateX(-100%); width: 100%; z-index: 100; }
 
 .content { max-width: 992px; }
-	.home, .single { background: repeating-linear-gradient( 180deg, #efefef, #efefef 12px, #fff 12px, #fff 24px); }
-	.home, .single { /*background: repeating-linear-gradient( 90deg, #efefef, #efefef 1px, #fff 2px, #fff 33.33%); background-position: 15px 0;*/ padding-bottom: 36px; padding-top: 48px; }
+	/*.home, .single { background: repeating-linear-gradient( 180deg, #efefef, #efefef 12px, #fff 12px, #fff 24px); }*/
+	.home, .single { background: repeating-linear-gradient( 90deg, #efefef, #efefef 1px, #fff 2px, #fff 33.33%); background-position: 15px 0; padding-bottom: 36px; padding-top: 48px; }
 	.logo { height: 132px; margin: 24px 0 48px -65px; width: auto; }
 	.main-nav { font-weight: 700; list-style: none; margin: 6px 0 144px -40px; }
 		.main-nav a { color: #999; }
