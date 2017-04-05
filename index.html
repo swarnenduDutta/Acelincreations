@@ -1,0 +1,35 @@
+---
+layout: default
+title: Home
+---
+<div class="col-md-8">
+	<div class="row">
+		{% for post in site.posts %}
+		<div class="col-md-6 post fadeIn one">
+			<a href="{{ post.url }}"><img src="img/post-1.png"></a>
+			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+		</div><!-- .col-md-6 -->
+		{% endfor %}
+		<div class="col-md-6 post fadeIn two">
+			<a href="single.html"><img src="img/post-2.png"></a>
+			<a href="single.html"><h2>Etihad Airways / LowPoly World</h2></a>
+		</div><!-- .col-md-6 -->
+		<div class="col-md-6 post fadeIn three">
+			<a href="single.html"><img src="img/post-3.png"></a>
+			<a href="single.html"><h2>A Stranger Passing By My Door</h2></a>
+		</div><!-- .col-md-6 -->
+		<div class="col-md-6 post fadeIn four">
+			<a href="single.html"><img src="img/post-4.png"></a>
+			<a href="single.html"><h2>NGRS</h2></a>
+		</div><!-- .col-md-6 -->
+		<div class="col-md-6 post fadeIn five">
+			<a href="single.html"><img src="img/post-5.png"></a>
+			<a href="single.html"><h2>Baba Green – Branding &amp; Interior Design</h2></a>
+		</div><!-- .col-md-6 -->
+		<div class="col-md-6 post fadeIn six">
+			<a href="single.html"><img src="img/post-6.png"></a>
+			<a href="single.html"><h2>POOL without WATER</h2></a>
+		</div><!-- .col-md-6 -->
+	</div><!-- .col-md-8 .row -->
+	<button class="show-more">show more</button>
+</div><!-- .col-md-8 -->
